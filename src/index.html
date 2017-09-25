@@ -1,52 +1,49 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
-        <link rel="stylesheet" href="css/main.css">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <link rel="stylesheet" href="http://www.atlasestateagents.co.uk/css/tether.min.css">
-        <script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
-        <script src="C://Users\Снежа\WebstormProjects\untitled16\posngstagr\pongstagr.am.js"></script>
-        <script src="C://Users\Снежа\WebstormProjects\untitled16\posngstagr/pongstagr.am.css"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <script>
-            function download() {
-                $('ul').spectragram('getRecentTagged',{
-                    query: 'converse'
-                });
-            }
-            $(document).ready(function () {
-                $('#s').pongstgrm({
-                    accessId:     '1476665546',
-                    accessToken:  '1476665546.cd23ab2.58b556ac4b7c431099b4bda6697c82fb',
-                    show: 'recent'
-                });
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pongstagr.am.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://www.atlasestateagents.co.uk/css/tether.min.css">
+    <script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
 
+    <script src="/posngstagr/pongstagr.am.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script>
+        function download() {
+            $('#photos').pongstgrm({
+                accessId:     '1476665546',
+                accessToken:  '1476665546.cd23ab2.58b556ac4b7c431099b4bda6697c82fb',
+                show: 'recent'
             });
-        </script>
-    </head>
-    <body>
-    <div class="container">
-        <div class="row " >
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <input type="button" value="Загрузить еще" onclick="download()">
-            </div>
+        }
+        $(document).ready(function () {
 
+        });
+    </script>
+    <script src="../posngstagr/pongstagr.am.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row " >
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <input type="button" value="Загрузить еще" onclick="download()">
         </div>
-<ul>
-hi
-</ul>
-        <div id="s">dd</div>
-    </div>
 
-    </body>
+        <ul id="photos">
+
+        </ul>
+    </div>
+</div>
+</body>
 </html>

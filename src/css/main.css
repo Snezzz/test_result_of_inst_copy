@@ -199,8 +199,8 @@ textarea {
 }
 
 @media print,
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -278,4 +278,12 @@ textarea {
     h3 {
         page-break-after: avoid;
     }
+}
+#photos{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.s{
+    margin-bottom: 20px;
 }
